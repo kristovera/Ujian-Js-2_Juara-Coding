@@ -1,0 +1,92 @@
+
+
+.navbar{
+	background: #466fbf;
+	margin: 0;
+	padding: 20px;
+  margin-bottom: 20px;
+}
+ 
+.logo{
+	font-size: 14pt;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid #93a4d9;
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    background-color: #e3ecf1;
+  }
+  .form-container {
+    display: none;
+
+  }
+
+
+  .form{
+      
+    background-color: rgb(220, 230, 27);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+  
+}
+
+.form button {
+    width: 100px;
+    padding: 5px;
+    background-color: rgb(14, 96, 203);
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form h2 {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+
+
+.form-pesan{
+      
+  background-color: rgb(115, 150, 176);
+  width: 90%;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+.form-pesan h2 {
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+  @media (max-width: 768){
+    .container {
+        flex-direction: column;
+        align-items: center; 
+       
+    }
+    .form{
+        width: 80%;
+    }
+}
+
+  

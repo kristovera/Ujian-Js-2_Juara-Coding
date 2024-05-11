@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiket Kereta Api</title>
+    <link rel="stylesheet" href="kereta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+     
+            <a  class="logo">Tiket Super Murah</a>
+    </nav>
+    <div>
+        <form class="form">
+            <h2>Pencarian Tiket Kereta Api</h2>
+            <div class="form-group">
+                <label for="asal"><i class="fa fa-train" aria-hidden="true"></i>Dari</label>
+                <input type="text" id="asal" name="asal" class="form-control" required>
+                <label for="tujuan"><i class="fa fa-train" aria-hidden="true"></i>Ke</label>
+                <input type="text" id="tujuan" name="tujuan" class="form-control" required>
+                <label for="tanggal">Tanggal Berangkat</label>
+                <input type="date" id="tanggal" name="tanggal" class="form-control" required>
+                <button onclick="cariTiket()">Cari Tiket</button>
+            </div>
+        </form>
+
+
+        <table id="tabelTiket">
+            <thead>
+                <tr>
+                    <th>Nama Kereta</th>
+                    <th>Asal</th>
+                    <th>Tujuan</th>
+                    <th>Durasi</th>
+                    <th>Tanggal Berangkat</th>
+                    <th>Harga</th>
+                    <th>Jam Keberangkatan</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="hasilPencarian">
+                <!-- Hasil pencarian akan ditampilkan di sini -->
+            </tbody>
+        </table>
+
+        
+       
+        <div id="detailPesanan"></div>
+    
+    </div>
+    <script src="kereta.js"></script>
+</body>
+
+</html>
